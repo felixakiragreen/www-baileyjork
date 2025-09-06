@@ -10,6 +10,12 @@
 	}
 
 	export let items: GalleryItem[] = []
+
+	let openIndex: number | null = null
+	const close = () => (openIndex = null)
+	const onKey = (e: KeyboardEvent) => {
+		if (e.key === 'Escape') close()
+	}
 </script>
 
 <div
@@ -22,9 +28,14 @@
 		md: { gridTemplateColumns: 'repeat(2, 1fr)' },
 	})}
 >
-	{#each items as item}
+	{#each items as item, i}
 		<article class={css({ display: 'grid', gap: '3' })}>
-			<img src={item.image} alt={item.title ?? ''} class={css({ w: 'full', h: 'auto', display: 'block' })} />
+			<img
+				src={item.image}
+				alt={item.title ?? ''}
+				on:click={() => (openIndex = i)}
+				class={css({ w: 'full', h: 'auto', display: 'block', cursor: 'zoom-in' })}
+			/>
 			<div class={css({ display: 'grid', gap: '1' })}>
 				{#if item.title}
 					<h3 class={css({ m: '0', fontWeight: '700' })}>{item.title}</h3>
@@ -44,3 +55,26 @@
 	{/each}
 </div>
 
+<svelte:window on:keydown={onKey} />
+
+{#if openIndex !== null}
+	<div
+		class={css({
+			position: 'fixed',
+			inset: '0',
+			bg: 'semi',
+			display: 'flex',
+			alignItems: 'center',
+			justifyContent: 'center',
+		})}
+		on:click={close}
+		role="dialog"
+		aria-modal="true"
+	>
+		<img
+			src={items[openIndex].image}
+			alt={items[openIndex].title ?? ''}
+			class={css({ maxW: '90vw', maxH: '90vh', w: 'auto', h: 'auto', objectFit: 'contain', cursor: 'zoom-out', boxShadow: 'realistic', borderRadius: 'md' })}
+		/>
+	</div>
+{/if}

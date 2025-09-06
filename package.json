@@ -6,7 +6,7 @@
 	"scripts": {
 		"prepare": "svelte-kit sync && panda codegen",
 		"dev": "vite dev",
-		"build": "vsvelte-kit sync && ite build",
+		"build": "vsvelte-kit sync && vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",

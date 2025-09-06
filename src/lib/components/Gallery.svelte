@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { css } from 'ui/css'
+	import Lightbox from './Lightbox.svelte'
 
 	export type GalleryItem = {
 		image: string
@@ -12,10 +13,6 @@
 	export let items: GalleryItem[] = []
 
 	let openIndex: number | null = null
-	const close = () => (openIndex = null)
-	const onKey = (e: KeyboardEvent) => {
-		if (e.key === 'Escape') close()
-	}
 </script>
 
 <div
@@ -57,33 +54,9 @@
 	{/each}
 </div>
 
-<svelte:window on:keydown={onKey} />
-
-{#if openIndex !== null}
-	<div
-		class={css({
-			position: 'fixed',
-			inset: '0',
-			display: 'flex',
-			alignItems: 'center',
-			justifyContent: 'center',
-		})}
-		role="dialog"
-		aria-modal="true"
-		aria-label="Image viewer"
-		tabindex="0"
-		on:keydown={(e) => { if (e.key === 'Escape' || e.key === 'Enter' || e.key === ' ') close() }}
-	>
-		<button
-			type="button"
-			aria-label="Close"
-			on:click={close}
-			class={css({ position: 'fixed', inset: '0', bg: 'semi', border: 'none', p: '0', appearance: 'none' })}
-		/>
-		<img
-			src={items[openIndex].image}
-			alt={items[openIndex].title ?? ''}
-			class={css({ position: 'relative', maxW: '90vw', maxH: '90vh', w: 'auto', h: 'auto', objectFit: 'contain', cursor: 'zoom-out', boxShadow: 'realistic', borderRadius: 'md' })}
-		/>
-	</div>
-{/if}
+<Lightbox
+	open={openIndex !== null}
+	src={openIndex !== null ? items[openIndex].image : ''}
+	alt={openIndex !== null ? (items[openIndex].title ?? '') : ''}
+	on:close={() => (openIndex = null)}
+/>

@@ -126,7 +126,7 @@ const theme: Theme = {
 	},
 	semanticTokens: {
 		colors: {
-			g: {
+			agrey: {
 				95: {
 					value: {
 						base: '{colors.grey.950}',
@@ -249,24 +249,12 @@ const theme: Theme = {
 						_dark: '{colors.grey.100}',
 					},
 				},
-				error: {
-					value: {
-						base: '{colors.red.400}',
-						_dark: '{colors.red.400}',
-					},
-				},
 			},
 			bg: {
 				DEFAULT: {
 					value: {
 						base: '{colors.grey.100}',
 						_dark: '{colors.grey.900}',
-					},
-				},
-				card: {
-					value: {
-						base: '{colors.grey.200}',
-						_dark: '{colors.grey.800}',
 					},
 				},
 			},

@@ -17,7 +17,7 @@
 	{#if about.photo}
 		<img
 			src={about.photo}
-			alt="About photo"
+			alt="Bailey Jork Straub"
 			class={css({ display: 'block', w: 'full', maxW: '320px', h: 'auto' })}
 		/>
 	{/if}

@@ -17,7 +17,7 @@
 - Type check: `bun run check` (sync + svelte-check)
 - Lint: `bun run lint` (Prettier check + ESLint)
 - Format: `bun run format`
-- Build: `bun run build` (adapter-static → `build/`)
+- Build: `bun run build` (adapter-netlify → `.netlify/`)
 - Preview: `bun run preview`
 
 ## Coding Style & Naming

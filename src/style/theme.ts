@@ -12,7 +12,7 @@ export const colorPalettes = [
 export type ColorPalette = (typeof colorPalettes)[number]
 
 const theme: Theme = {
-	tokens: {
+		tokens: {
 		colors: {
 			felix: { value: 'oklch(91.3% 0.2335 130.017)' },
 			black: { value: 'oklch(0% 0 0)' },
@@ -107,10 +107,10 @@ const theme: Theme = {
 				100: { value: '#f0e6f9' }
 			}
 		},
-		fonts: {
-			main: {
-				value: '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji"',
-			},
+			fonts: {
+				main: {
+					value: '"Futura", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif',
+				},
 			mono: {
 				value: 'ui-monospace, SFMono-Regular, Menlo, Monaco, monospace',
 			},

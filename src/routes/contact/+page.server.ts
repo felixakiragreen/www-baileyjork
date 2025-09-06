@@ -1,4 +1,5 @@
 import type { Actions } from './$types'
+export const prerender = false
 import { fail } from '@sveltejs/kit'
 
 const required = (v: string) => v?.trim().length > 0
@@ -45,4 +46,3 @@ export const actions: Actions = {
 		}
 	},
 }
-

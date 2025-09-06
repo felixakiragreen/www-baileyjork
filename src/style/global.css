@@ -2,56 +2,59 @@
 
 /* Futura font family */
 @font-face {
-  font-family: 'Futura';
-  src: url('./fonts/FuturaLight.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Futura';
+	src: url('./fonts/FuturaLight.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Futura';
-  src: url('./fonts/FuturaBook.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Futura';
+	src: url('./fonts/FuturaBook.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Futura';
-  src: url('./fonts/FuturaMedium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Futura';
+	src: url('./fonts/FuturaMedium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Futura';
-  src: url('./fonts/FuturaDemi.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Futura';
+	src: url('./fonts/FuturaDemi.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Futura';
-  src: url('./fonts/FuturaBold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Futura';
+	src: url('./fonts/FuturaBold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Futura';
-  src: url('./fonts/FuturaExtraBold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Futura';
+	src: url('./fonts/FuturaExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Futura';
-  src: url('./fonts/FuturaHeavy.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Futura';
+	src: url('./fonts/FuturaHeavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
 }
 
 /* Global font */
 html, body {
-  font-family: 'Futura', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+	font-family: 'Futura', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+	background: var(--colors-red-400);
 }
+
+

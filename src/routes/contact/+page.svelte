@@ -1,14 +1,11 @@
 <script lang="ts">
 	import { css } from 'ui/css'
+	import { enhance } from '$app/forms'
+	export let form: { ok?: boolean; error?: string; values?: Record<string, string> } | undefined
 
-	let name = ''
-	let email = ''
-	let body = ''
-	let submitted = false
-
-	const onSubmit = () => {
-		submitted = true
-	}
+	let name = form?.values?.name ?? ''
+	let email = form?.values?.email ?? ''
+	let body = form?.values?.body ?? ''
 </script>
 
 <section
@@ -20,7 +17,8 @@
 	})}
 >
 	<form
-		on:submit|preventDefault={onSubmit}
+		method="POST"
+		use:enhance
 		class={css({
 			display: 'grid',
 			gap: '4',
@@ -105,11 +103,10 @@
 			</button>
 		</div>
 
-		{#if submitted}
-			<p class={css({ color: 'grey.600' })}>
-				Thanks! Form not wired to a backend yet.
-			</p>
+		{#if form?.ok}
+			<p class={css({ color: 'green.600', fontWeight: '600' })}>Thanks! Your message was sent.</p>
+		{:else if form?.error}
+			<p class={css({ color: 'red.600', fontWeight: '600' })}>{form.error}</p>
 		{/if}
 	</form>
 </section>
-

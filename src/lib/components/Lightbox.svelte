@@ -7,14 +7,9 @@
 	export let alt = ''
 
 	const dispatch = createEventDispatcher<{ close: void }>()
-	const close = () => dispatch('close')
-	const onKey = (e: KeyboardEvent) => {
-		if (e.key === 'Escape' || e.key === 'Enter' || e.key === ' ') close()
-	}
+		const close = () => dispatch('close')
 </script>
-
 {#if open}
-	<svelte:window on:keydown={onKey} />
 	<div
 		class={css({
 			position: 'fixed',

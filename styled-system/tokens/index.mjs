@@ -1815,97 +1815,89 @@ const tokens = {
     "value": "1536px",
     "variable": "var(--breakpoints-2xl)"
   },
-  "colors.g.5": {
-    "value": "var(--colors-g-5)",
-    "variable": "var(--colors-g-5)"
+  "colors.agrey.5": {
+    "value": "var(--colors-agrey-5)",
+    "variable": "var(--colors-agrey-5)"
   },
-  "colors.g.10": {
-    "value": "var(--colors-g-10)",
-    "variable": "var(--colors-g-10)"
+  "colors.agrey.10": {
+    "value": "var(--colors-agrey-10)",
+    "variable": "var(--colors-agrey-10)"
   },
-  "colors.g.15": {
-    "value": "var(--colors-g-15)",
-    "variable": "var(--colors-g-15)"
+  "colors.agrey.15": {
+    "value": "var(--colors-agrey-15)",
+    "variable": "var(--colors-agrey-15)"
   },
-  "colors.g.20": {
-    "value": "var(--colors-g-20)",
-    "variable": "var(--colors-g-20)"
+  "colors.agrey.20": {
+    "value": "var(--colors-agrey-20)",
+    "variable": "var(--colors-agrey-20)"
   },
-  "colors.g.25": {
-    "value": "var(--colors-g-25)",
-    "variable": "var(--colors-g-25)"
+  "colors.agrey.25": {
+    "value": "var(--colors-agrey-25)",
+    "variable": "var(--colors-agrey-25)"
   },
-  "colors.g.30": {
-    "value": "var(--colors-g-30)",
-    "variable": "var(--colors-g-30)"
+  "colors.agrey.30": {
+    "value": "var(--colors-agrey-30)",
+    "variable": "var(--colors-agrey-30)"
   },
-  "colors.g.35": {
-    "value": "var(--colors-g-35)",
-    "variable": "var(--colors-g-35)"
+  "colors.agrey.35": {
+    "value": "var(--colors-agrey-35)",
+    "variable": "var(--colors-agrey-35)"
   },
-  "colors.g.40": {
-    "value": "var(--colors-g-40)",
-    "variable": "var(--colors-g-40)"
+  "colors.agrey.40": {
+    "value": "var(--colors-agrey-40)",
+    "variable": "var(--colors-agrey-40)"
   },
-  "colors.g.45": {
-    "value": "var(--colors-g-45)",
-    "variable": "var(--colors-g-45)"
+  "colors.agrey.45": {
+    "value": "var(--colors-agrey-45)",
+    "variable": "var(--colors-agrey-45)"
   },
-  "colors.g.50": {
-    "value": "var(--colors-g-50)",
-    "variable": "var(--colors-g-50)"
+  "colors.agrey.50": {
+    "value": "var(--colors-agrey-50)",
+    "variable": "var(--colors-agrey-50)"
   },
-  "colors.g.55": {
-    "value": "var(--colors-g-55)",
-    "variable": "var(--colors-g-55)"
+  "colors.agrey.55": {
+    "value": "var(--colors-agrey-55)",
+    "variable": "var(--colors-agrey-55)"
   },
-  "colors.g.60": {
-    "value": "var(--colors-g-60)",
-    "variable": "var(--colors-g-60)"
+  "colors.agrey.60": {
+    "value": "var(--colors-agrey-60)",
+    "variable": "var(--colors-agrey-60)"
   },
-  "colors.g.65": {
-    "value": "var(--colors-g-65)",
-    "variable": "var(--colors-g-65)"
+  "colors.agrey.65": {
+    "value": "var(--colors-agrey-65)",
+    "variable": "var(--colors-agrey-65)"
   },
-  "colors.g.70": {
-    "value": "var(--colors-g-70)",
-    "variable": "var(--colors-g-70)"
+  "colors.agrey.70": {
+    "value": "var(--colors-agrey-70)",
+    "variable": "var(--colors-agrey-70)"
   },
-  "colors.g.75": {
-    "value": "var(--colors-g-75)",
-    "variable": "var(--colors-g-75)"
+  "colors.agrey.75": {
+    "value": "var(--colors-agrey-75)",
+    "variable": "var(--colors-agrey-75)"
   },
-  "colors.g.80": {
-    "value": "var(--colors-g-80)",
-    "variable": "var(--colors-g-80)"
+  "colors.agrey.80": {
+    "value": "var(--colors-agrey-80)",
+    "variable": "var(--colors-agrey-80)"
   },
-  "colors.g.85": {
-    "value": "var(--colors-g-85)",
-    "variable": "var(--colors-g-85)"
+  "colors.agrey.85": {
+    "value": "var(--colors-agrey-85)",
+    "variable": "var(--colors-agrey-85)"
   },
-  "colors.g.90": {
-    "value": "var(--colors-g-90)",
-    "variable": "var(--colors-g-90)"
+  "colors.agrey.90": {
+    "value": "var(--colors-agrey-90)",
+    "variable": "var(--colors-agrey-90)"
   },
-  "colors.g.95": {
-    "value": "var(--colors-g-95)",
-    "variable": "var(--colors-g-95)"
+  "colors.agrey.95": {
+    "value": "var(--colors-agrey-95)",
+    "variable": "var(--colors-agrey-95)"
   },
   "colors.text": {
     "value": "var(--colors-text)",
     "variable": "var(--colors-text)"
   },
-  "colors.text.error": {
-    "value": "var(--colors-text-error)",
-    "variable": "var(--colors-text-error)"
-  },
   "colors.bg": {
     "value": "var(--colors-bg)",
     "variable": "var(--colors-bg)"
-  },
-  "colors.bg.card": {
-    "value": "var(--colors-bg-card)",
-    "variable": "var(--colors-bg-card)"
   },
   "spacing.-1": {
     "value": "calc(var(--spacing-1) * -1)",
@@ -2194,14 +2186,6 @@ const tokens = {
   "colors.colorPalette.95": {
     "value": "var(--colors-color-palette-95)",
     "variable": "var(--colors-color-palette-95)"
-  },
-  "colors.colorPalette.error": {
-    "value": "var(--colors-color-palette-error)",
-    "variable": "var(--colors-color-palette-error)"
-  },
-  "colors.colorPalette.card": {
-    "value": "var(--colors-color-palette-card)",
-    "variable": "var(--colors-color-palette-card)"
   }
 }
 

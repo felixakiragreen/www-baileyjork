@@ -54,11 +54,9 @@
 			<h1
 				class={css({
 					fontWeight: '700',
-					// fontSize: 'clamp(2rem, 8vw, 4rem)',
 					fontSize: '4xl',
-					// lineHeight: '1.1',
-					// letterSpacing: '-0.02em',
 					m: '0',
+					color: 'red.400',
 				})}
 			>
 				Bailey Jörk Straub

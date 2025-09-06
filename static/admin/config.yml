@@ -1,0 +1,31 @@
+# config.yml
+backend:
+  name: github
+  repo: felixakiragreen/www-baileyjork
+  branch: master
+
+media_folder: static/images
+public_folder: /images
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "about"
+        label: "About"
+        file: "src/content/about.json"
+        fields:
+          - {label: "Photo", name: "photo", widget: "image"}
+          - {label: "Blurb", name: "blurb", widget: "text"}
+  
+  - name: "galleries"
+    label: "Galleries"
+    folder: "src/content/galleries"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Series", name: "series", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Dimensions", name: "dimensions", widget: "string"}
+      - {label: "Year", name: "year", widget: "number"}
+      - {label: "Description", name: "description", widget: "text", required: false}

@@ -45,7 +45,10 @@
 				alignItems: 'center',
 				gap: '2',
 				py: '4',
+				my: '4',
 				textAlign: 'center',
+				borderBottomWidth: '1px',
+				borderColor: 'red.400'
 			})}
 		>
 			<h1

@@ -29,6 +29,7 @@
 		<label class={css({ display: 'grid', gap: '2' })}>
 			<span class={css({ fontWeight: '600' })}>Name</span>
 			<input
+				name="name"
 				type="text"
 				bind:value={name}
 				required
@@ -49,6 +50,7 @@
 		<label class={css({ display: 'grid', gap: '2' })}>
 			<span class={css({ fontWeight: '600' })}>Email</span>
 			<input
+				name="email"
 				type="email"
 				bind:value={email}
 				required
@@ -69,6 +71,7 @@
 		<label class={css({ display: 'grid', gap: '2' })}>
 			<span class={css({ fontWeight: '600' })}>Message</span>
 			<textarea
+				name="body"
 				rows={6}
 				bind:value={body}
 				required
@@ -83,7 +86,7 @@
 					_outline: { outline: 'none' },
 					_focusVisible: { borderColor: 'grey.600' },
 				})}
-			/>
+			></textarea>
 		</label>
 
 		<div class={css({ display: 'flex', justifyContent: 'flex-end' })}>
